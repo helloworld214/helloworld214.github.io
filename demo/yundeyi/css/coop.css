@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.banner {
+
+	margin-top: 65px;
+	max-width: 1920px;
+	height: 310px;
+	background: url(../img/combg.jpg);
+}
+
+
+.win h2 , .benift h2 , .coop h2 {
+
+	margin: 70px 0 -20px 0;
+	font-weight: normal;
+	font-size: 36px;
+
+}
+
+
+.win dl , .benift dl , .coop dl {
+
+	padding-left: 50px;
+}
+
+
+.win dt , .benift dt , .coop dt {
+
+	font-size: 24px;
+	color: rgb(246,112,65);
+	height: 55px;
+	line-height: 55px;
+	padding-top: 30px;
+}
+
+
+.win dd , .benift dd , .coop dd {
+
+	font-size: 16px;
+	color: #777;
+	line-height: 30px;
+}

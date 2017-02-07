@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="word1, word2, word3...">
+    <meta name="description" content="this is description...">
+    <meta name="author" content="name, email">
+    <title class="p-name"></title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/cityPick.css">
+    <link rel="stylesheet" href="css/productdetail.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="public-header-top">
+        <div class="container">
+            <h1 id="logo">
+                <a href="javascript:;">Tesla</a>
+            </h1>
+            <div class="login-or-register float-left">
+                <a href="#" id="login-btn">登录</a>
+                <a href="#" id="register-btn">注册</a>
+            </div>
+            <div class="user-info float-left hide">
+                <a href="#" class="float-clear">
+                    <img src="images/tesla.jpg" alt="用户头像" id="head-icon">
+                    <span id="nickname" class="float-left">用户名</span>
+                </a>
+            </div>
+            <div class="search float-right">
+                <form action="#" method="get" id="search-form">
+                    <input type="text" id="search-box" name="search-box">
+                    <input type="submit" id="search-btn" value="搜 索">
+                    <div id="search-box-tips">请输入您要搜索的关键词</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="public-header-bottom">
+        <div class="container">
+            <div class="public-header-bottom-left">
+                <ul class="public-header-nav">
+                    <li><a href="index.html"><span class="iconfont"></span>首页</a></li>
+                    <li><a href="index.html#recommend"><span class="iconfont"></span>今日推荐</a></li>
+                    <li><a href="index.html#choice"><span class="iconfont"></span>设计精选</a></li>
+                    <li><a href="index.html#all-match"><span class="iconfont"></span>经典百搭</a></li>
+                    <li><a href="index.html#discount"><span class="iconfont"></span>优惠折扣</a></li>
+                </ul>
+            </div>
+            <div class="public-header-bottom-right float-right">
+                <div class="public-header-nav public-header-nav-right float-left">
+                    <ul class="float-clear">
+                        <li class="float-left"><a href="javascript:void(0);">发现</a></li>
+                        <li class="float-left"><a href="javascript:void(0);">别人说</a></li>
+                        <li class="float-left"><a href="javascript:void(0);">私人订制</a></li>
+                    </ul>
+                </div>
+                <div id="cartbox" class="float-left">
+                    <a href="#" id="cart">当前购物车&nbsp;<span id="cart-count">0</span>&nbsp;件商品</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="container">
+        <div class="product-intro float-clear">
+            <div class="preview-wrap float-left">
+                <div class="wrap-top">
+                    <img src="" class="big-img" alt="">
+                </div>
+                <div class="wrap-bottom">
+                    <div class="small-img-lists">
+                        <ul class="smallImg-wrap float-clear">
+                            <li ><img src="images/product1.jpg" class="small-img" alt=""></li>
+                            <li ><img src="images/product2.jpg" class="small-img" alt=""></li>
+                            <li ><img src="images/product3.jpg" class="small-img" alt=""></li>
+                            <li ><img src="images/product4.jpg" class="small-img" alt=""></li>
+                            <li ><img src="images/product5.jpg" class="small-img" alt=""></li>
+                            <li ><img src="images/product1.jpg" class="small-img" alt=""></li>
+                            <li ><img src="images/product3.jpg" class="small-img" alt=""></li>
+                            <li ><img src="images/product5.jpg" class="small-img" alt=""></li>
+                        </ul>
+                    </div>
+                    <a href="javascript:;" class="prev">&lt;</a>
+                    <a href="javascript:;" class="next">&gt;</a>
+                </div>
+            </div>
+            <div class="info-wrap">
+                <h3 class="p-name"></h3>
+                <div class="row">
+                    <div class="left-txt column w2" style="margin-top: 2px">价格</div>
+                    <div class="column-group">
+                        <span class="RMB-symbol">&yen;</span>
+                        <span class="price p-price"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left-txt column">收货地址</div>
+                    <div class="column-group">
+                        <span>从</span>
+                        <span class="store-address" style="color: #999"></span>
+                        <span>到</span>
+                        <span id="ctbtn">
+                            <span class="customer-address">中国北京市</span>
+                            <span class="addressSelect-btn"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left-txt column w2">运费</div>
+                    <div class="column-group">
+                        <span class="freight"></span>
+                        <span></span>
+                        <span class="color-999">（默认<span class="defaultExpress"></span>快递，指定其他快递需补差价）</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left-txt column w2">重量</div>
+                    <div class="column-group">
+                        <span class="p-weight"></span>Kg
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left-txt column">买家评价</div>
+                    <div class="column-group">
+                        <span>好评率</span>
+                        <span class="goodComment-percent"></span>
+                        <span>% | </span>
+                        <a href="#" class="color-00cccb">共
+                            <span class="commentCount"></span>
+                            条评论</a>
+                    </div>
+                </div>
+                <div class="row" style="line-height: 60px">
+                    <div class="left-txt column" style="margin-top: 16px">购买数量</div>
+                    <div class="column-group">
+                        <span class="buy-wrap">
+                            <span id="reduceBtn">-</span>
+                            <input type="text" id="buyCount" value="0">
+                            <span id="addBtn">+</span>
+                        </span>
+                        <a href="#" id="add-to-cart">加入购物车</a>
+                    </div>
+                </div>
+                <div id="ctwrap"></div>
+            </div>
+            <div class="store-wrap">
+                <a href="#">
+                    <img src="images/tesla.jpg" class="storeLogo" alt="">
+                    <p class="storeName" title="花边smileflower">花边smileflower</p>
+                </a>
+                <div class="store-parameters">
+                    <div class="s-item">店铺信誉
+                        <span class="storeRank"></span>
+                        <span class="storeRank"></span>
+                        <span class="storeRank"></span>
+                        <span class="storeRank"></span>
+                    </div>
+                    <div class="s-item">开店时间 <span class="storeOpenTime s-item-val">2010-10-15</span></div>
+                    <div class="s-item">所在地 <span class="storeAddress s-item-val">中国广西南宁市</span></div>
+                    <div class="s-item">好评率 <span class="storePraise s-item-val">95.12%</span></div>
+                    <div class="s-item">粉丝数 <span class="storeFans s-item-val">73</span></div>
+                    <div class="allEvaluate">
+                        <ul class="float-clear">
+                            <li>
+                                <p>描述</p>
+                                <a href="#">4.7</a>
+                            </li>
+                            <li>
+                                <p>服务</p>
+                                <a href="#">4.8</a>
+                            </li>
+                            <li>
+                                <p>物流</p>
+                                <a href="#">4.5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduce-wrap float-clear">
+            <div class="side-wrap">
+                <div class="goods-loveHot tabSwitch">
+                    <div class="tabBtn-wrap loveHotBtn-wrap float-clear">
+                        <a href="#" class="tabBtn-item loveHotBtn active">最爱排行</a>
+                        <a href="#" class="tabBtn-item loveHotBtn">热销排行</a>
+                    </div>
+                    <div class="tabContent-wrap loveHot-content">
+                        <div class="tabContent-item side-content">
+                            <ul class="float-clear">
+                                <li>
+                                    <dl>
+                                        <a href="#">
+                                            <dt><img src="images/side_img001.png" alt="最爱排行"></dt>
+                                            <dd>
+                                                <div class="goods-title" title="特 暖 原创设计 小皮绳拉链 鼓鼓口袋 花朵帽羽绒服 2色 原价398 现价169"></div>
+                                                <div class="price-wrap">&yen;&nbsp;<span class="goods-price">456</span></div>
+                                            </dd>
+                                        </a>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <a href="#">
+                                            <dt><img src="images/side_img002.png" alt="最爱排行"></dt>
+                                            <dd>
+                                                <div class="goods-title" title="静走的冬天。温暖翻边。麓皮绒后拉链环保雪地鞋雪地靴。"></div>
+                                                <div class="price-wrap">&yen;&nbsp;<span class="goods-price">456</span></div>
+                                            </dd>
+                                        </a>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <a href="#">
+                                            <dt><img src="images/side_img003.png" alt="最爱排行"></dt>
+                                            <dd>
+                                                <div class="goods-title" title="花边 |素心。设计感拼接袖。低调艺术风格纯精棉军绿毛圈棉卫衣。"></div>
+                                                <div class="price-wrap">&yen;&nbsp;<span class="goods-price">456</span></div>
+                                            </dd>
+                                        </a>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabContent-item side-content">
+                            <ul class="float-clear">
+                                <li>
+                                    <dl>
+                                        <a href="#">
+                                            <dt><img src="images/side_img003.png" alt="最爱排行"></dt>
+                                            <dd>
+                                                <div class="goods-title" title="花边 |素心。设计感拼接袖。低调艺术风格纯精棉军绿毛圈棉卫衣。"></div>
+                                                <div class="price-wrap">&yen;&nbsp;<span class="goods-price">456</span></div>
+                                            </dd>
+                                        </a>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <a href="#">
+                                            <dt><img src="images/side_img002.png" alt="最爱排行"></dt>
+                                            <dd>
+                                                <div class="goods-title" title="静走的冬天。温暖翻边。麓皮绒后拉链环保雪地鞋雪地靴。"></div>
+                                                <div class="price-wrap">&yen;&nbsp;<span class="goods-price">456</span></div>
+                                            </dd>
+                                        </a>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <a href="#">
+                                            <dt><img src="images/side_img001.png" alt="最爱排行"></dt>
+                                            <dd>
+                                                <div class="goods-title" title="特 暖 原创设计 小皮绳拉链 鼓鼓口袋 花朵帽羽绒服 2色 原价398 现价169"></div>
+                                                <div class="price-wrap">&yen;&nbsp;<span class="goods-price">456</span></div>
+                                            </dd>
+                                        </a>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="otherUser-comein">
+                    <div class="otherUser-tit">看过此商品的用户还看过</div>
+                    <div class="side-content">
+                        <ul class="float-clear">
+                            <li>
+                                <dl>
+                                    <a href="#">
+                                        <dt><img src="images/side_img003.png" alt="最爱排行"></dt>
+                                        <dd>
+                                            <div class="goods-title" title="花边 |素心。设计感拼接袖。低调艺术风格纯精棉军绿毛圈棉卫衣。"></div>
+                                            <div class="price-wrap">&yen;&nbsp;<span class="goods-price">456</span></div>
+                                        </dd>
+                                    </a>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <a href="#">
+                                        <dt><img src="images/side_img003.png" alt="最爱排行"></dt>
+                                        <dd>
+                                            <div class="goods-title" title="花边 |素心。设计感拼接袖。低调艺术风格纯精棉军绿毛圈棉卫衣。"></div>
+                                            <div class="price-wrap">&yen;&nbsp;<span class="goods-price">456</span></div>
+                                        </dd>
+                                    </a>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <a href="#">
+                                        <dt><img src="images/side_img003.png" alt="最爱排行"></dt>
+                                        <dd>
+                                            <div class="goods-title" title="花边 |素心。设计感拼接袖。低调艺术风格纯精棉军绿毛圈棉卫衣。"></div>
+                                            <div class="price-wrap">&yen;&nbsp;<span class="goods-price">456</span></div>
+                                        </dd>
+                                    </a>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <a href="#">
+                                        <dt><img src="images/side_img003.png" alt="最爱排行"></dt>
+                                        <dd>
+                                            <div class="goods-title" title="花边 |素心。设计感拼接袖。低调艺术风格纯精棉军绿毛圈棉卫衣。"></div>
+                                            <div class="price-wrap">&yen;&nbsp;<span class="goods-price">456</span></div>
+                                        </dd>
+                                    </a>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="details-wrap">
+                <div class="tabSwitch">
+                    <div class="tabBar">
+                        <ul class="float-clear">
+                            <li class="tabBtn-item"><a href="#">商品介绍</a></li>
+                            <li class="tabBtn-item"><a href="#">规格与包装</a></li>
+                            <li class="tabBtn-item"><a href="#">商品评价(<span class="commentCount"></span>)</a></li>
+                            <li class="tabBtn-item"><a href="#">售后保障</a></li>
+                            <li class="tabBtn-item"><a href="#">购买咨询</a></li>
+                        </ul>
+                    </div>
+                    <div class="tabContent">
+                        <div id="jieshao" class="tabContent-item">
+                            <div class="part-text">
+                                <div class="brand-row">品牌：<span id="brand" style="color: #00cccb">稻草人（MEXICAN）</span></div>
+                                <div class="parameter">
+                                    <ul class="float-clear">
+                                        <li title="稻草人潮流女包">商品名称：稻草人潮流女包</li>
+                                        <li title="2292975">商品编号：2292975</li>
+                                        <li title="1.11kg">商品毛重：1.11kg</li>
+                                        <li title="广东">商品产地：广东</li>
+                                        <li title="PU">材质：PU</li>
+                                        <li title="欧美">风格：欧美</li>
+                                        <li title="拉链">开袋方式：拉链</li>
+                                        <li title="有">附属肩带：有</li>
+                                        <li title="红色">颜色：红色</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="more-parameter">更多参数&gt;&gt;</a>
+                            </div>
+                            <div class="img-wrap">
+                                <ul>
+                                    <li>
+                                        <img src="images/detail_xiezi001.jpg" alt="">
+                                        <p class="img-describe">正面</p>
+                                    </li>
+                                    <li>
+                                        <img src="images/detail_xiezi002.jpg" alt="">
+                                        <p class="img-describe">后面</p>
+                                    </li>
+                                    <li>
+                                        <img src="images/detail_xiezi003.jpg" alt="">
+                                        <p class="img-describe">侧面</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabContent-item">
+                            <h2>规格与包装</h2>
+                            <p>盒装，高端礼品鞋盒包装</p>
+                        </div>
+                        <div class="tabContent-item">
+                            <div class="comment-top">
+                                <div class="comment-percent">
+                                    <div>好评率</div>
+                                    <div><span class="comment-percent-count">97.51</span>%</div>
+                                </div>
+                                <div class="comment-label">
+                                    <span class="comment-label-item">样子不错(<span class="">76</span>)</span>
+                                    <span class="comment-label-item">材质不错(<span class="">76</span>)</span>
+                                    <span class="comment-label-item">大小合适(<span class="">76</span>)</span>
+                                    <span class="comment-label-item">质量不错(<span class="">76</span>)</span>
+                                    <span class="comment-label-item">外观漂亮(<span class="">76</span>)</span>
+                                    <span class="comment-label-item">颜色很正(<span class="">76</span>)</span>
+                                    <span class="comment-label-item">超值(<span class="">76</span>)</span>
+                                    <span class="comment-label-item">经济实用(<span class="">76</span>)</span>
+                                    <span class="comment-label-item">发货快(<span class="">76</span>)</span>
+                                </div>
+                            </div>
+                            <div class="comment-bottom">
+                                <div class="comment-tab">
+                                    <ul class="float-clear">
+                                        <li class="active"><a href="#">全部评价(<span class="evaluateCount"></span>)</a></li>
+                                        <li><a href="#">好评(<span class="count-all">120</span>)</a></li>
+                                        <li><a href="#">中评(<span class="count-all">46</span>)</a></li>
+                                        <li><a href="#">差评(<span class="count-all">2</span>)</a></li>
+                                        <li><a href="#">追评(<span class="count-all">36</span>)</a></li>
+                                        <li><a href="#">晒图(<span class="count-all">66</span>)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="comment-con">
+                                    <ul>
+                                        <li>
+                                            <div class="dt">
+                                                <div class="comment-user-head"></div>
+                                                <div class="comment-user-name">tesla214</div>
+                                            </div>
+                                            <div class="dd">
+                                                <div class="user-giveStars">132132</div>
+                                                <p class="comment-txt">包包很好看，，质量也不错，，而且没啥味道，，当天到背出去啦包包很好看，，质量也不错，，而且没啥味道，，当天到背出去啦</p>
+                                                <div class="user-showImg">
+                                                    <a href="#" class="user-showImg-item"><img src="images/side_img001.png" alt=""></a>
+                                                    <a href="#" class="user-showImg-item"><img src="images/side_img002.png" alt=""></a>
+                                                    <a href="#" class="user-showImg-item"><img src="images/side_img003.png" alt=""></a>
+                                                    <a href="#" class="user-showImg-item"><img src="images/side_img001.png" alt=""></a>
+                                                </div>
+                                                <div class="other-info">
+                                                    <span>黑色</span>
+                                                    <span>2016-6-15 13:45</span>
+                                                    <span>来自Tesla Android客户端</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dt">
+                                                <div class="comment-user-head"></div>
+                                                <div class="comment-user-name">tesla214</div>
+                                            </div>
+                                            <div class="dd">
+                                                <div class="user-giveStars">132132</div>
+                                                <p class="comment-txt">包包很好看，，质量也不错，，而且没啥味道，，当天到背出去啦包包很好看，，质量也不错，，而且没啥味道，，当天到背出去啦</p>
+                                                <div class="user-showImg"></div>
+                                                <div class="other-info">
+                                                    <span>黑色</span>
+                                                    <span>2016-6-15 13:45</span>
+                                                    <span>来自Tesla Android客户端</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContent-item">
+                            享受三包服务，7天无理由退换货服务
+                        </div>
+                        <div class="tabContent-item">购买咨询,待完善！敬请期待...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="public-footer-top txt-center">
+        <div class="inline-block float-clear">
+            <div class="more-exciting public-footer-inner1">
+                <h2>更多精彩</h2>
+                <ul>
+                    <li><a href="#">新品推荐</a></li>
+                    <li><a href="#">热卖产品</a></li>
+                    <li><a href="#">私人定制</a></li>
+                    <li><a href="#">高端品牌</a></li>
+                </ul>
+            </div>
+            <div class="more-exciting public-footer-inner1">
+                <h2>我们的承诺</h2>
+                <ul>
+                    <li><a href="#">100％原创设计</a></li>
+                    <li><a href="#">365天不打烊</a></li>
+                    <li><a href="#">无理由退换货</a></li>
+                    <li><a href="#">担保交易</a></li>
+                    <li><a href="#">先行赔付</a></li>
+                </ul>
+            </div>
+            <div class="more-exciting public-footer-inner1">
+                <h2>关注我们</h2>
+                <ul>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                    <li><a href="#">官方微信</a></li>
+                </ul>
+            </div>
+            <div class="more-exciting public-footer-inner1">
+                <img src="images/20170207143318.png" alt="二维码" style="width: 150px">
+                <p style="text-align: center">扫码关注</p>
+            </div>
+        </div>
+    </div>
+    <div class="public-footer-bottom">
+        <h2>Tesla,高端与品位之选</h2>
+        <div class="public-footer-nav">
+            <a href="#">关于我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">媒体报道</a>
+            <a href="#">招贤纳士</a>
+            <a href="#">版权保护</a>
+            <a href="#">用户条款</a>
+            <a href="#">隐私声明</a>
+            <a href="#">友情链接</a>
+            <a href="#">帮助中心</a>
+        </div>
+        <p>Tesla科技有限公司tesla.com&nbsp;Copyright&nbsp;&copy;&nbsp;2008-2020&nbsp;
+            [桂ICP备20080808][桂公安网备20080808][桂ICP证20080808]</p>
+    </div>
+</div>
+<div id="totop"></div>
+<script src="../../js/jquery.min.js"></script>
+<script src="js/htmlTemplate.js"></script>
+<script src="js/common.js"></script>
+<script src="js/city-picker.data.js"></script>
+<script src="js/cityPick2.js"></script>
+<script src="js/productsinfo.data.js"></script>
+<script src="js/productDetails.js"></script>
+
+<script>
+    
+    
+    var pid = window.location.href.indexOf("?") > -1 &&
+        window.location.href.split("?")[1].split("=")[1];
+    pid = pid.substr(-1) === "#" ? pid.substr(0,pid.length - 1) : pid;
+    var goods = products[pid];
+    
+    $(function(){
+        var cityPicker = new CityPicker("ctwrap", "ctbtn", {
+            onChange: function(address){
+                $(".customer-address").text(address.fullAddress);
+            }
+        });
+
+        if(goods){
+            $(".big-img").attr("src", goods.imgPath);
+            $(".p-name").html(goods.name);
+            $(".p-price").html(goods.price);
+            $(".store-address").html(goods.address);
+            $(".freight").html(goods.freight);
+            $(".p-weight").html(goods.weight);
+            $(".goodComment-percent").html(goods.commentPercent);
+            $(".commentCount").html(goods.commentCount);
+        }
+        
+        
+        htmlReplace(".wrap-top",{
+            imgPath: goods.imgPath
+        });
+        htmlReplace(".smallImg-wrap",{
+            lists: goods.name
+        });
+        htmlReplace(".info-wrap",{
+            name: goods.name,
+            price: goods.price,
+            address: goods.address,
+            freight: typeof goods.freight === "number" ? goods.freight + "元" : goods.freight,
+            express: goods.express,
+            weight: goods.weight,
+            commentPercent: goods.commentPercent,
+            commentCount: goods.commentCount
+        });
+
+        
+    });
+    
+    
+    
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="word1, word2, word3...">
+    <meta name="description" content="this is description...">
+    <meta name="author" content="name, email">
+    <title>Tesla</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="public-header-top">
+            <div class="container">
+                <h1 id="logo">
+                    <a href="javascript:;">Tesla</a>
+                </h1>
+                <div class="login-or-register float-left">
+                    <a href="#" id="login-btn">登录</a>
+                    <a href="#" id="register-btn">注册</a>
+                </div>
+                <div class="user-info float-left hide">
+                    <a href="#" class="float-clear">
+                        <img src="images/tesla.jpg" alt="用户头像" id="head-icon">
+                        <span id="nickname" class="float-left">用户名</span>
+                    </a>
+                </div>
+                <div class="search float-right">
+                    <form action="#" method="get" id="search-form">
+                        <input type="text" id="search-box" name="search-box">
+                        <input type="submit" id="search-btn" value="搜 索">
+                        <div id="search-box-tips">请输入您要搜索的关键词</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="public-header-bottom">
+            <div class="container">
+                <div class="public-header-bottom-left">
+                    <ul class="public-header-nav">
+                        <li><a href="#"><span class="iconfont"></span>首页</a></li>
+                        <li><a href="#recommend"><span class="iconfont"></span>今日推荐</a></li>
+                        <li><a href="#choice"><span class="iconfont"></span>设计精选</a></li>
+                        <li><a href="#all-match"><span class="iconfont"></span>经典百搭</a></li>
+                        <li><a href="#discount"><span class="iconfont"></span>优惠折扣</a></li>
+                    </ul>
+                </div>
+                <div class="public-header-bottom-right float-right">
+                    <div class="public-header-nav public-header-nav-right float-left">
+                        <ul class="float-clear">
+                            <li class="float-left"><a href="javascript:void(0);">发现</a></li>
+                            <li class="float-left"><a href="javascript:void(0);">别人说</a></li>
+                            <li class="float-left"><a href="javascript:void(0);">私人订制</a></li>
+                        </ul>
+                    </div>
+                    <div id="cartbox" class="float-left">
+                        <a href="#" id="cart">当前购物车&nbsp;<span id="cart-count">0</span>&nbsp;件商品</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="focus-picture" class="banner">
+        <ul class="banner-lists"></ul>
+        <div class="banner-btnsbar"></div>
+        <a href="#" id="prev"></a>
+        <a href="#" id="next"></a>
+    </div>
+    <div class="main" style="background-color: #fafafa">
+        <div class="container">
+            <!--今日推荐start-->
+            <div id="recommend">
+                <h2 class="title">今日推荐</h2>
+            </div>
+            <!--今日推荐end-->
+            
+            <!--设计精选start-->
+            <div id="choice">
+                <h2 class="title">设计精选</h2>
+            </div>
+            <!--设计精选end-->
+            
+            <!--经典百搭start-->
+            <div id="all-match">
+                <h2 class="title">经典百搭</h2>
+            </div>
+            <!--经典百搭end-->
+    
+            <!--优惠折扣start-->
+            <div id="discount">
+                <h2 class="title">优惠折扣</h2>
+            </div>
+            <!--优惠折扣end-->
+        </div>
+    </div>
+    <div id="join-us">
+        <div class="container">
+            <h2 class="title">加入变革，焕新自我</h2>
+            <ul class="float-clear">
+                <li class="products-list products-list-lower">
+                    <a href="javascript:;" class="product-link">
+                        <img src="images/jiaru1.jpg" alt="独一无二的高端产品">
+                    </a>
+                    <a href="javascript:;" class="describe"><span>独一无二的高端产品</span></a>
+                </li>
+                <li class="products-list products-list-lower">
+                    <a href="javascript:;" class="product-link">
+                        <img src="images/jiaru2.jpg" alt="近乎完美的设计成品">
+                    </a>
+                    <a href="javascript:;" class="describe"><span>近乎完美的设计成品</span></a>
+                </li>
+                <li class="products-list products-list-lower clear-margin-right">
+                    <a href="javascript:;" class="product-link">
+                        <img src="images/jiaru3.jpg" alt="极佳的创意和设计">
+                    </a>
+                    <a href="javascript:;" class="describe"><span>极佳的创意和设计</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="public-footer-top txt-center">
+            <div class="inline-block float-clear">
+                <div class="more-exciting public-footer-inner1">
+                    <h2>更多精彩</h2>
+                    <ul>
+                        <li><a href="#">新品推荐</a></li>
+                        <li><a href="#">热卖产品</a></li>
+                        <li><a href="#">私人定制</a></li>
+                        <li><a href="#">高端品牌</a></li>
+                    </ul>
+                </div>
+                <div class="more-exciting public-footer-inner1">
+                    <h2>我们的承诺</h2>
+                    <ul>
+                        <li><a href="#">100％原创设计</a></li>
+                        <li><a href="#">365天不打烊</a></li>
+                        <li><a href="#">无理由退换货</a></li>
+                        <li><a href="#">担保交易</a></li>
+                        <li><a href="#">先行赔付</a></li>
+                    </ul>
+                </div>
+                <div class="more-exciting public-footer-inner1">
+                    <h2>关注我们</h2>
+                    <ul>
+                        <li><a href="#">新浪微博</a></li>
+                        <li><a href="#">腾讯微博</a></li>
+                        <li><a href="#">官方微信</a></li>
+                    </ul>
+                </div>
+                <div class="more-exciting public-footer-inner1">
+                    <img src="images/20170207143318.png" alt="二维码" style="width: 150px">
+                    <p style="text-align: center">扫码关注</p>
+                </div>
+            </div>
+        </div>
+        <div class="public-footer-bottom">
+            <h2>Tesla,高端与品位之选</h2>
+            <div class="public-footer-nav">
+                <a href="#">关于我们</a>
+                <a href="#">联系我们</a>
+                <a href="#">媒体报道</a>
+                <a href="#">招贤纳士</a>
+                <a href="#">版权保护</a>
+                <a href="#">用户条款</a>
+                <a href="#">隐私声明</a>
+                <a href="#">友情链接</a>
+                <a href="#">帮助中心</a>
+            </div>
+            <p>Tesla科技有限公司tesla.com&nbsp;Copyright&nbsp;&copy;&nbsp;2016-2020&nbsp;
+                [桂ICP备20080808][桂公安网备20080808][桂ICP证20080808]</p>
+        </div>
+    </div>
+    <div id="totop"></div>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="js/htmlTemplate.js"></script>
+    <script src="js/indexJsonData.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        
+                    
+        
+    </script>
+</body>
+</html>

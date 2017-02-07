@@ -1,0 +1,510 @@
+@charset "utf-8";
+
+
+/*banner广告部分*/
+.banner {
+
+	margin-top: 65px;
+	max-width: 1920px;
+	height: 544px;
+}
+
+.banner.part1{
+
+	background: url(../img/banner1.jpg) no-repeat center;
+
+}
+
+
+.banner.part2 {
+
+	background: url(../img/banner2.jpg) no-repeat center;
+}
+
+.banner.part3 {
+
+	background: url(../img/banner3.jpg) no-repeat center;
+}
+
+
+
+.banner ul.point {
+
+	position: absolute;
+	left: 50%;
+	top: 560px;
+}
+
+.banner ul.point li {
+
+	margin-left: 8px;
+	background: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	float: left;
+}
+
+.banner ul.point li.point_selected {
+
+	background: rgb(253,81,31);
+}
+
+
+.banner .arrow {
+
+	position: absolute;
+	width: 100%;
+	height: 83px;
+	top: 285px;
+}
+
+.banner .arrow  a {
+
+	display: block;
+	height: 83px;
+	width: 53px;
+}
+
+.banner .arrow #leftA {
+
+	float: left;
+	background:url(../img/lef1.png) no-repeat center center;
+	height: 83px;
+	width: 53px;
+	margin-left: 100px;
+}
+
+.banner .arrow #rightA {
+
+	float: right;
+	background:url(../img/rig1.png) no-repeat center center;
+	height: 83px;
+	width: 53px;
+	margin-right: 100px;
+}
+
+/*  app功能介绍部分 */
+.detail {
+
+	position: relative;
+}
+
+.firstLi,.secondLi,.thirdLi,.fourthLi,.fifthLi {
+
+	width: 1440px;
+	margin:0 auto;
+}
+
+.firstLi>div,.secondLi>div,.thirdLi>div,.fourthLi>div,.fifthLi>div {
+
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.detail .firstLi{
+
+	background:  url(../img/bg_02.jpg) no-repeat center bottom;
+	height: 708px;
+}
+
+
+.first > img {
+
+	margin-top: 50px;
+	margin-left: 78px;
+	float: left;
+}
+
+
+.first figure {
+
+	float: right;
+	width: 436px;
+	height: 265px;
+	margin-top: 160px;
+
+}
+
+
+.first figure figcaption {
+
+	padding: 20px;
+	letter-spacing: 1px;
+	font-size: 18px;
+	color: #444;
+	line-height: 34px;
+}
+
+
+
+
+/*second*/
+.detail .secondLi{
+
+	background: url(../img/bg_04.jpg) no-repeat center bottom;
+	height: 650px;
+
+}
+
+
+.second > img {
+
+	float: right;
+	padding: 50px;
+}
+
+
+.second figure {
+
+	float: left;
+	width: 436px;
+	height: 265px;
+	margin-top: 160px;
+/*	border: 1px solid red;*/
+}
+
+
+
+.second figure figcaption {
+
+	padding: 20px;
+	letter-spacing: 1px;
+	font-size: 18px;
+	color: #444;
+	line-height: 34px;
+}
+
+
+
+
+
+
+
+
+/*third*/
+.detail .thirdLi{
+
+	background: url(../img/bg_06.jpg) no-repeat center bottom;
+	height: 700px;
+	margin-top: 35px;
+}
+
+.third > img {
+
+	padding-top: 50px;
+	float: left;
+}
+
+
+.third figure {
+
+	width: 436px;
+	height: 265px;
+	margin-top: 160px;
+	float: right;
+}
+
+
+.third figure > img {
+
+	width: 388px;
+}
+
+
+.third figure figcaption {
+
+	line-height: 34px;
+	padding: 20px;
+	letter-spacing: 1px;
+	font-size: 18px;
+	color: #444;
+}
+
+
+
+
+
+
+
+
+.detail .fourthLi{
+
+	background: url(../img/bg_07.jpg) no-repeat center bottom;
+	height: 700px;
+}
+
+.fourth > img {
+
+	padding-top: 50px;
+	float: right;
+}
+
+
+.fourth figure {
+
+	width: 436px;
+	height: 265px;
+	margin-top: 160px;
+	float: left;
+}
+
+
+.fourth figure > img {
+
+	width: 388px;
+}
+
+
+.fourth figure figcaption {
+
+	line-height: 34px;
+	padding: 20px;
+	letter-spacing: 1px;
+	font-size: 18px;
+	color: #444;
+}
+
+
+
+
+.detail .fifthLi{
+
+	background: url(../img/bg_09.jpg) no-repeat center bottom;
+	height: 700px;
+}
+
+
+.fifth > img {
+
+	padding-top: 50px;
+	margin-left: 80px;
+	float: left;
+}
+
+
+.fifth figure {
+
+	width: 436px;
+	height: 265px;
+	margin-top: 160px;
+	margin-right: 60px;
+	float: right;
+}
+
+
+.fifth figure > img {
+
+	width: 388px;
+}
+
+
+.fifth figure figcaption {
+
+	line-height: 34px;
+	padding: 20px;
+	letter-spacing: 1px;
+	font-size: 18px;
+	color: #444;
+}
+
+
+
+
+
+.detail h2 {
+
+	background: url(../img/ix_03.png) no-repeat center center; 
+	width: 675px;
+	height: 39px;
+	text-indent: -9999em;
+	margin: 50px auto;
+}
+
+
+
+.detail .toBottom li a{
+
+	display: block;
+	background:#fff url(../img/nx_03.png) no-repeat center center;
+	box-shadow: 1px 1px 1px 1px #eee;
+	height: 56px;
+	width: 56px;
+	border-radius: 30px;
+
+
+
+	position: absolute;
+	left: 50%;
+	margin: -27px;
+}
+
+
+.detail .toBottom1 {
+
+	top: 700px;
+}
+
+.detail .toBottom2  {
+
+	top: 1350px;
+}
+
+.detail .toBottom3  {
+
+	top: 2090px;
+}
+
+.detail .toBottom4  {
+
+	top: 2790px;
+}
+
+
+
+/*  下载 */
+
+.down {
+
+	margin-bottom: 120px;
+}
+
+
+.down .truck, .down .consignor {
+
+	float: left;
+	width: 50%;
+}
+
+
+.down .truck a, .down .consignor a{
+
+	display: block;
+	background-color: rgb(253,81,31);
+	color: #fff;
+	text-align: center;
+	height: 125px;
+	line-height: 125px;
+	font-size: 40px;
+}
+
+.down .truck a {
+
+	margin-right: 8px;
+	background:rgb(253,81,31)  url(../img/ix_07.png) no-repeat center center;
+	text-indent: -9999em;
+}
+
+
+.down .consignor a {
+
+	margin-left: 8px;
+	background:#444 url(../img/ix_09.png) no-repeat center center;
+	text-indent: -9999em;
+}
+
+
+
+.down figure {
+
+	clear: both;
+	margin: 0 auto;
+	width: 584px;
+	padding: 70px 0;
+	text-align: center;
+}
+
+.down figure img {
+
+	margin:  0 auto;
+	width: 233px;
+
+}
+
+.downBtn li {
+
+	width: 50%;
+	float: left;
+}
+
+.downBtn li a {
+
+
+	display:  block;
+	height: 65px;
+	border-radius: 5px;
+	margin: 35px 8px;
+}	
+
+.downBtn .iphone  a{
+
+	background: rgb(246,112,65) url(../img/ios_png2.png) no-repeat center center;
+}	
+
+.downBtn .android a{
+
+	background: rgb(246,112,65) url(../img/ix_16.png) no-repeat center center;
+}
+
+
+
+
+
+footer {
+
+	background: rgb(240, 240, 240);
+	font-size: 15px;
+}
+
+.footer {
+
+	line-height: 30px;
+	text-align: center;
+	padding:  40px 0 50px 0;
+}
+
+
+.copy span{
+
+	color: #777;
+}
+
+
+.copy .beian {
+
+	color:  #333;
+}
+
+.copy .beianhao{
+
+	color: #aaa;
+	padding-left: 10px;
+}
+
+
+
+
+
+
+.cmpInfo ul li {
+
+	float: left;
+	color: #777;
+	padding-right: 10px;
+}
+
+.cmpInfo ul li a {
+
+	color: #333;
+}
+
+
+address {
+
+	font-style: normal;
+}
+
+
+
+
+

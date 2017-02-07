@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+
+
+.settle_banner {
+
+	padding-top: 65px;
+	background: url(../img/settle_02.jpg) no-repeat center center;
+	height: 357px;
+	max-width: 1920px;
+}
+
+
+.advantage {
+
+	width: 1000px;
+	height: 430px;
+	border-bottom: 2px solid #ccc;
+}
+
+.advantage ul {
+
+}
+
+.advantage ul li {
+
+	float: left;
+	margin: 70px 80px;
+	width: 170px;
+}
+
+
+.advantage ul li h2 {
+
+	font-size: 40px;
+	line-height: 55px;
+}
+
+
+
+
+.procedure {
+
+	height: 532px;	
+	border-bottom: 2px solid #ccc;
+	position: relative;
+}
+
+
+.procedure  > h2 {
+
+	text-align:  center;
+	font-size: 44px;
+	height: 240px;
+	line-height: 240px;
+}
+
+
+.procedure >ul li {
+
+	float:  left;
+	padding-left:  40px;
+	padding-right: 230px;
+}
+
+.procedure >ul li:last-child {
+
+	padding-left:  30px;
+	padding-right: 30px;
+}
+
+
+
+
+.procedure > ul li h2 {
+
+	font-size: 27px;
+	height: 50px;
+	line-height: 50px;
+}
+
+
+.leftPoint ul, .rightPoint ul {
+
+	position: absolute;
+}
+
+.leftPoint ul{ 
+
+	left: 280px;
+	top: 300px;
+}
+
+.rightPoint ul {
+
+	left: 675px;
+	top: 300px;
+}
+
+
+
+.leftPoint ul li , .rightPoint ul li{
+
+	margin-right: 10px;
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: #ccc;
+	border-radius: 8px;
+}
+
+.leftPoint .firstPoint, .rightPoint .firstPoint{
+
+	background: rgb(200,200,200);
+}
+
+.leftPoint .secondPoint , .rightPoint .secondPoint{
+
+	background: rgb(225,225,225);
+}
+
+.leftPoint .thirdPoint, .rightPoint .thirdPoint{
+
+	background: rgb(240,240,240);
+}
+
+
+
+
+
+
+
+
+
+.invite {
+
+	margin: 0px auto;
+	width: 900px;
+	height: 450px;
+	padding: 0 50px 100px 100px;
+}
+
+.invite h2 {
+
+	text-align:  center;
+	font-size: 44px;
+	height: 240px;
+	line-height: 240px;
+}
+
+
+.bussinessList li {
+
+	float: left;
+	width: 300px;
+	height: 100px;
+
+}
+
+.bussinessList li img {
+
+	float: left;
+}
+
+.bussinessList li h3 {
+
+	float: left;
+	width: 150px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 24px;
+	font-weight: normal;
+	color: #555;
+	background: rgb(248,248,248);
+}
+
+
+
+
+
+
+

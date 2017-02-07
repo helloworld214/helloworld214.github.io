@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "microsoft yahei";
+    font-size: 87.5%;
+}
+ul,ol{
+    list-style: none;
+}
+img{
+    border: 0;
+}
+a:link{
+    text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a{
+    color: #000;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.float-clear:after{
+    display: block;
+    height: 0;
+    content: "\200B";
+    clear: both;
+    visibility: hidden;
+}
+.clear-margin-left{
+    margin-left: 0 !important;
+}
+.clear-margin-right{
+    margin-right: 0 !important;
+}
+.clear-margin-top{
+    margin-top: 0 !important;
+}
+.clear-margin-bottom{
+    margin-bottom: 0 !important;
+}
+.show{
+    display: block !important;
+}
+.hide{
+    display: none;
+}
+.txt-center{
+    text-align: center !important;
+}
+.inline-block{
+    display: inline-block !important;
+}
+.w2, .w3{
+    width: 4rem;
+    white-space: nowrap;
+}
+.w2{
+    letter-spacing: 2rem;
+}
+.w3{
+    letter-spacing: 0.5rem;
+}
+.container{
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+#mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+.public-header{
+    height: 92px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.1);
+}
+.public-header a:hover{
+    color: #00cccb;
+}
+#logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 235px;
+    height: 90px;
+    margin-left: -165px;
+    background: url("../images/tesla_logo.png");
+    z-index: 100;
+}
+#logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -1000px;
+}
+.public-header-top{
+    height: 45px;
+    border-bottom: 1px solid #eee;
+}
+.public-header-bottom{
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+}
+#login-btn, #register-btn{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 45px;
+}
+.user-info a{
+    display: block;
+    padding-right: 10px;
+    line-height: 45px;
+}
+#head-icon{
+    display: block;
+    float: left;
+    width: 37px;
+    height: 37px;
+    margin: 4px 10px;
+    border: 0;
+    border-radius: 50%;
+}
+#search-form{
+    position: relative;
+    width: 350px;
+    height: 45px;
+}
+#search-box, #search-btn, #search-box-tips{
+    position: absolute;
+    top: 8px;
+    font-size: 1rem;
+    font-family: "microsoft yahei";
+}
+#search-box{
+    left: 0;
+    width: 288px;
+    height: 27px;
+    padding: 0 5px;
+    border: 1px solid #00cccb;
+    outline: none;
+    background-color: transparent;
+    z-index: 10;
+}
+#search-btn{
+    left: 300px;
+    display: block;
+    width: 50px;
+    height: 29px;
+    border: 1px solid #00cccb;
+    outline: none;
+    text-align: center;
+    background-color: #00cccb;
+    color: #fff;
+    cursor: pointer;
+}
+#search-box-tips{
+    left: 5px;
+    line-height: 27px;
+    color: #aaa;
+}
+.public-header-bottom ul > li{
+    float: left;
+    margin-left: -1px;
+}
+.public-header-nav a{
+    display: block;
+    padding: 0 10px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    line-height: 45px;
+    white-space: nowrap;
+}
+#cartbox{
+    width: 250px;
+    height: 45px;
+    border-right: 1px solid #eee;
+    text-align: center;
+}
+#cart{
+    display: inline-block;
+    max-width: 200px;
+    height: 45px;
+    padding-left: 37px;
+    line-height: 45px;
+    text-align: left;
+    background: url("../images/carticon.png") 0 6px no-repeat;
+    vertical-align: top;
+    overflow: hidden;
+}
+#cart-count{
+    display: inline-block;
+    max-width: 70px;
+    color: #ffa128;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top;
+}
+#cart:hover{
+    color: #000;
+}
+.public-footer-top{
+    width: 100%;
+    /*height: 200px;*/
+    padding: 100px 0;
+    background: url("../images/footer_bg.gif") repeat-x #f6f6f6 top;
+}
+.public-footer-inner1{
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+}
+.public-footer-inner1 h2{
+    margin-bottom: 15px;
+    color: #00cccb;
+}
+.public-footer-inner1 a{
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 4px;
+    margin-left: -10px;
+    line-height: 25px;
+}
+.public-footer-inner1 a:hover{
+    background-color: #00cccb;
+    color: #fff;
+}
+.public-footer-bottom{
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background-color: #00cccb;
+    text-align: center;
+    color: #fff;
+}
+.public-footer-bottom h2{
+    font-size: 1.8rem;
+}
+.public-footer-bottom a{
+    display: inline-block;
+    padding: 40px 10px 15px 0;
+    color: #fafafa;
+}
+.public-footer-bottom p{
+    font-size: 0.75rem;
+}
+#totop{
+    position: fixed;
+    right: 70px;
+    bottom: 90px;
+    display: none;
+    width: 56px;
+    height: 56px;
+    background: url("../images/totop.gif") center no-repeat;
+    cursor: pointer;
+}
+#totop:hover{
+    background: url("../images/totop-hover.gif") center no-repeat;
+}

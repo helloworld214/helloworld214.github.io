@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.timeList {
+
+	padding-top: 65px;
+
+}
+
+
+.timeList li {
+
+/*	height: 300px;*/
+	border-top: 2px solid #ccc;
+	padding: 70px 0;
+}
+
+
+.timeList .time {
+
+	width: 189px;
+	min-height: 60px;
+	max-height: 240px;
+	line-height: 60px;
+
+	background: rgb(253, 81,31);
+
+	font-size: 34px;
+	color: #fff;
+	letter-spacing: 3px;
+	text-align: center;
+
+	float: left;
+	margin-right: 38px;
+}
+
+.timeList .descript {
+
+	width: 768px;
+	vertical-align: bottom;
+	font-size: 16px;
+	color: #666;
+	float: left;
+	line-height: 33px;
+}
+
+
+.timeList .time1999, .timeList .time2001, .timeList .time2010, .timeList .time2007{
+
+	line-height: 60px;
+	height: 60px;
+}
+
+.timeList .time2004 {
+
+
+}
+
+
+
+.timeList .time2015 dt {
+
+	color: rgb(238,132,68);
+	margin-top: 22px;
+}
+
+.timeList .time2015 dt:first-child {
+
+	margin-top:  0px;
+
+}
+
+
+.timeList .time2015 dd{
+
+	line-height: 30px;
+}
+
+
+.timeList .space {
+
+	clear: both;
+}
+

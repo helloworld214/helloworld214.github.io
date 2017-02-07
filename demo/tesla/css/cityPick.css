@@ -1,0 +1,124 @@
+.cityPick-wrap ul,
+.cityPick-wrap dl,
+.cityPick-wrap dt,
+.cityPick-wrap dd,
+.cityPick-wrap textarea{
+    margin: 0;
+    padding: 0;
+}
+.cityPick-wrap{
+    display: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px #999;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    color: #666;
+    background-color: #fff;
+    overflow: hidden;
+}
+.cityPick-wrap ul{
+    list-style: none;
+    overflow: hidden;
+}
+.cityPick-wrap ul:before,
+.cityPick-wrap ul:after,
+.cityPick-wrap dl:before,
+.cityPick-wrap dl:after{
+    display: block;
+    height: 0;
+    content: "\200B";
+    visibility: hidden;
+    clear: both;
+}
+.cityPick-tab > ul > li{
+    float: left;
+    width: 33.3333%;
+    margin-left: -1px;
+    border-left: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    line-height: 2.85;
+    text-align: center;
+    background-color: #eee;
+    cursor: pointer;
+}
+.cityPick-tab > ul > li:hover{
+    color: #00cccb;
+}
+.cityPick-tab > ul > li.active{
+    background-color: #fff;
+    border-bottom-color: #fff;
+}
+.cityPick-contents{
+    padding: 10px 15px;
+}
+.cityPick-content-item{
+    display: none;
+}
+.cityPick-content-item dl{
+    padding: 5px 0;
+    line-height: 1.8;
+}
+.cityPick-content-item dt{
+    float: left;
+}
+.cityPick-content-item dd{
+}
+.province dt{
+    width: 2em;
+    text-align: right;
+}
+.province dd{
+    margin-left: 3em;
+}
+.province dd span,
+.city dd span,
+.county dd span{
+    display: inline-block;
+    padding: 0 8px;
+    border-radius: 4px;
+    line-height: 1.8;
+    word-break: keep-all;
+    cursor: pointer;
+}
+.province dd span:hover,
+.city dd span:hover,
+.county dd span:hover{
+    color: #00cccb;
+}
+.province dd span.active,
+.city dd span.active,
+.county dd span.active{
+    color: #fff;
+    background-color: #00cccb;
+}
+.cityPick-wrap textarea{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 150px;
+    margin-top: 5px;
+    padding: 5px;
+    -moz-box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    color: #666;
+    background-color: #fafafa;
+}
+.cityPick-cancel, .cityPick-ok{
+    float: right;
+    display: block;
+    margin: 5px 0 5px 20px;
+    padding: 0 15px;
+    border-radius: 4px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #00cccb;
+}
