@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/cityPick.css">
+    <link rel="stylesheet" href="css/citypick.css">
     <link rel="stylesheet" href="css/productdetail.css">
     <style>
         
@@ -357,23 +357,14 @@
                             <div class="img-wrap">
                                 <ul>
                                     <li>
-                                        <img src="images/detail_xiezi001.jpg" alt="">
-                                        <p class="img-describe">正面</p>
-                                    </li>
-                                    <li>
-                                        <img src="images/detail_xiezi002.jpg" alt="">
-                                        <p class="img-describe">后面</p>
-                                    </li>
-                                    <li>
-                                        <img src="images/detail_xiezi003.jpg" alt="">
-                                        <p class="img-describe">侧面</p>
+                                        <img src="" class="big-img" alt="">
+                                        <p class="p-name"></p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="tabContent-item">
-                            <h2>规格与包装</h2>
-                            <p>盒装，高端礼品鞋盒包装</p>
+                            <p>高端礼品鞋盒包装</p>
                         </div>
                         <div class="tabContent-item">
                             <div class="comment-top">
@@ -450,7 +441,7 @@
                         <div class="tabContent-item">
                             享受三包服务，7天无理由退换货服务
                         </div>
-                        <div class="tabContent-item">购买咨询,待完善！敬请期待...</div>
+                        <div class="tabContent-item">尚未有顾客进行咨询</div>
                     </div>
                 </div>
             </div>
@@ -515,7 +506,7 @@
 <script src="js/htmlTemplate.js"></script>
 <script src="js/common.js"></script>
 <script src="js/city-picker.data.js"></script>
-<script src="js/cityPick2.js"></script>
+<script src="js/citypick.js"></script>
 <script src="js/productsinfo.data.js"></script>
 <script src="js/productDetails.js"></script>
 
@@ -531,6 +522,9 @@
         var cityPicker = new CityPicker("ctwrap", "ctbtn", {
             onChange: function(address){
                 $(".customer-address").text(address.fullAddress);
+            },
+            onCancel: function(){
+                $(".customer-address").text("中国北京市");
             }
         });
 
@@ -544,24 +538,7 @@
             $(".goodComment-percent").html(goods.commentPercent);
             $(".commentCount").html(goods.commentCount);
         }
-        
-        
-        htmlReplace(".wrap-top",{
-            imgPath: goods.imgPath
-        });
-        htmlReplace(".smallImg-wrap",{
-            lists: goods.name
-        });
-        htmlReplace(".info-wrap",{
-            name: goods.name,
-            price: goods.price,
-            address: goods.address,
-            freight: typeof goods.freight === "number" ? goods.freight + "元" : goods.freight,
-            express: goods.express,
-            weight: goods.weight,
-            commentPercent: goods.commentPercent,
-            commentCount: goods.commentCount
-        });
+
 
         
     });
